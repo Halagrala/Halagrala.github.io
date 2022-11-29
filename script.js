@@ -7,8 +7,8 @@ function fun()
         RR = cm2/2;
         var P2 = 3.14*RR**2;
         
-        document.getElementById("1pizza").value = P;
-        document.getElementById("2pizza").value = P2;
+        document.getElementById("1pizza").value = P.toFixed(0);
+        document.getElementById("2pizza").value = P2.toFixed(0);
         if(P>P2)
         {
             document.querySelector("h5").innerHTML = 'Opłaca się kupić pierwszą pizzę';
@@ -35,8 +35,8 @@ function fun()
         RR = cm2/2;
         var P2 = (3.14*RR**2)*2
         
-        document.getElementById("Dpizza").value = P;
-        document.getElementById("Spizza").value = P2;
+        document.getElementById("Dpizza").value = P.toFixed(0);
+        document.getElementById("Spizza").value = P2.toFixed(0);
         if(P>P2)
         {
             document.querySelector("h6").innerHTML = 'Opłaca się kupić dużą pizzę';
