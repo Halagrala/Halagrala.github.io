@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Kalkulator Pizzy</title>
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container d-block text-center">
+        <h2 class="p-2">Którą pizzę bardziej opłaca się kupić?</h2>
+
+        Pierwsza pizza: <input class="p-2 m-2" type="number" name="cm" id="cm" placeholder="średnica pizzy w cm">
+        <br/>
+        
+        Druga pizza: <input class="p-2 m-2" type="number" name="cm2" id="cm2" placeholder="średnica pizzy w cm">
+        <br/>
+
+        <button class="btn btn-primary p-2 m-2" onclick="fun()">Oblicz powierzchnię</button><br/>
+        Pole powierzchni pierwszej pizzy: <input class="p-2 m-2" type="number" name="1pizza" id="1pizza" disabled>
+        <br/>
+        Pole powierzchni drugiej pizzy: <input class="p-2 m-2" type="number" name="2pizza" id="2pizza" disabled>
+        <h4 class="p-2 m-2"></h4>
+        <h5 class="p-2 m-2"></h5>
+    </div>
+
+    <div class="container b-block text-center">
+        <h2 class="p-2">Czy opłaca się kupić dwie średnie czy jedną dużą?</h2>
+
+        Duża pizza: <input class="p-2 m-2" type="number" name="cmd" id="cmd" placeholder="średnica pizzy w cm">
+        <br/>
+        Cena dużej pizzy: <input class="p-2 m-2" type="number" name="zl1" id="zl1" placeholder="cena w zł">
+        <br/>
+        Średnia średniej pizzy: <input class="p-2 m-2" type="number" name="cm2s" id="cm2s" placeholder="średnica pizzy w cm">
+        <br/>
+        Cena średniej pizzy: <input class="p-2 m-2" type="number" name="zl2" id="zl2" placeholder="cena w zł">
+        <br/>
+
+
+        <button class="btn btn-primary p-2 m-2" onclick="fun2()">Oblicz powierzchnię</button><br/>
+        Pole powierzchni dużej pizzy: <input class="p-2 m-2" type="number" name="Dpizza" id="Dpizza" disabled>
+        <br/>
+        Pole powierzchni dwóch średnich pizz: <input class="p-2 m-2" type="number" name="Spizza" id="Spizza" disabled>
+        <br/>
+        <h4 class="p-2 m-2"></h4>
+        <h6 class="p-2 m-2"></h6>
+        Różnica cen: <input class="p-2 m-2" type="number" name="wynik" id="wynik" disabled>
+    </div>
+
+    <div>
+<table border="1" style="margin: auto;">
+   <tr>
+      <th>Pizzeria</th> <th>Telepizza</th> <th>FairPlay</th> <th>Milano</th>
+   </tr>
+   <tr>
+    <td>Rozmiar</td> <td>mała 21,5 cm, duża 38,5 cm, max 46 cm.</td> <td>mała 24 cm, średnia 32 cm, familijna 45cm</td> <td>mała 21,5 cm, duża 32 cm, familijna 45 cm.</td>
+   </tr>
+   <tr>
+    <td>Cena</td> <td>mała 18,99zł, duża 31,99zł, max 40,99zł</td> <td>mała 14zł, średnia 22zł, familijna 37zł</td> <td>mała 13,50zł, duża 22zł, familijna 39zł.</td>
+   </tr>
+</table>
+
+    </div>
+    <span>Myśle że nawet git</span>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" ></script>
+<script src="./script.js"></script>
